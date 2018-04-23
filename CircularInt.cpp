@@ -52,7 +52,10 @@
        if(x.low>x.high){
           x.low=x.low%x.high;
        }
+       return x;
     }
+    
+    
     int operator-(CircularInt& x){
     return x.hour-x.low;
     }
@@ -93,14 +96,14 @@
     }
     
                 
-                // int main(){
-                // CircularInt hour(1,12);
+                int main(){
+                CircularInt hour(1,12);
                 
-                // try {
-                // 		cout << hour/3;
-                // 	} catch (const string& message) {
-                // 		cout << message << endl;     // "There is no number x in {1,12} such that x*3=10"
-                // 	}
+                try {
+                		cout << hour/3;
+                	} catch (const string& message) {
+                		cout << message << endl;     // "There is no number x in {1,12} such that x*3=10"
+                	}
                 
-                //     return 0;
-                // }
+                    return 0;
+                }
